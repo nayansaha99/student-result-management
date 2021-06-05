@@ -1,13 +1,13 @@
 <?php
 include '../db-config.php';
 session_start();
-$_SESSION['status'] = 0;
 $error = '';
 if (!empty($_POST)){
     $email = htmlentities($_POST['email'],ENT_QUOTES);
     $password = htmlentities($_POST['password'],ENT_QUOTES);
     $result = mysqli_query($link,"SELECT * FROM admin WHERE email = '$email' AND password = '$password'");
     if(mysqli_num_rows($result) == 0) {
+        $_SESSION['status'] = 0;
         $error = "Your Email or Password is wrong";
     } else {
         $_SESSION['status'] = 1;
@@ -21,7 +21,7 @@ if (!empty($_POST)){
 <!doctype html>
 <html lang="en">
   <head>
-  	<title>Login 08</title>
+  	<title>Admin Login</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 

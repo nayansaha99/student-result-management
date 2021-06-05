@@ -13,7 +13,7 @@ if (isset($_SESSION['status'])) {
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Sidebar 04</title>
+    <title>Add Student</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -108,4 +108,4 @@ if (isset($_SESSION['status'])) {
 
 </body>
 </html>
-<?php session_destroy()?>
+

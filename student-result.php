@@ -17,7 +17,7 @@ $data = mysqli_fetch_all($result, MYSQLI_ASSOC);
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Sidebar 04</title>
+    <title>Student Results</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
