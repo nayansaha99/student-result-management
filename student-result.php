@@ -8,7 +8,7 @@ if (isset($_SESSION['status'])) {
     header('location: login/index.php');
 }
 
-$link = mysqli_connect('localhost', 'root', '', 'srms');
+$link = mysqli_connect('localhost', 'root', 'test', 'srms');
 
 $result = mysqli_query($link, "select * from students_results");
 $data = mysqli_fetch_all($result, MYSQLI_ASSOC);
